@@ -1,0 +1,33 @@
+<div class="claseAzul">
+  <ion-header style="color: white; text-align: center; font-family: 'Times New Roman', Times, serif; ">Leds</ion-header>
+  <div class="div1">
+    <ion-button
+  [class.encendido]="ledstate" 
+  [class.apagado]="!ledstate"
+  (click)="toogleState()">
+
+  {{ledstate ? 'Encendido' : 'Apagado'}}
+
+</ion-button>
+    <br>
+<ion-button
+  [class.encendido]="ledstate1" 
+  [class.apagado]="!ledstate1"
+  (click)="toogleState1()">
+
+  {{ledstate1 ? 'Encendido' : 'Apagado'}}
+
+</ion-button>
+    <br>
+  <ion-button
+    [class.encendido]="ledstate2" 
+    [class.apagado]="!ledstate2"
+    (click)="toogleState2()">
+  
+    {{ledstate2 ? 'Encendido' : 'Apagado'}}
+  
+  </ion-button>  
+  </div>
+  
+</div>
+
